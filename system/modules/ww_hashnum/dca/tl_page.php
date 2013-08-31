@@ -10,7 +10,11 @@
  * @license LGPL
  */
  
+// Add to regular sites
 $GLOBALS['TL_DCA']['tl_page']['palettes']['regular'] = str_replace('description','description,hashnum',  $GLOBALS['TL_DCA']['tl_page']['palettes']['regular']);
+
+// Add to forward sites
+$GLOBALS['TL_DCA']['tl_page']['palettes']['forward'] = str_replace('pageTitle','pageTitle,hashnum',  $GLOBALS['TL_DCA']['tl_page']['palettes']['forward']);
  
 $GLOBALS['TL_DCA']['tl_page']['fields']['hashnum'] = array
 (
