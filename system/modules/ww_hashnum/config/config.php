@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 /**
  *
@@ -248,7 +248,8 @@
  * event. For more information see https://contao.org/manual.html.
  */
 
-
+ $GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('Hashnum', 'replaceHashnum');
+ 
 /**
  * AUTO ITEMS
  *
